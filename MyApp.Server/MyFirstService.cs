@@ -11,5 +11,16 @@ namespace MyApp.Services
             Console.WriteLine($"Received:{x}, {y}");
             return x + y;
         }
+
+        public async UnaryResult<MyObject> ReturnNull()
+        {
+            MyObject result = null;
+            return result;
+        }
+
+        public async UnaryResult<int> HasNullParameter(string x)
+        {
+            return 1;
+        }
     }
 }
