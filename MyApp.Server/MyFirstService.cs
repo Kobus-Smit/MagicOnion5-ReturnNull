@@ -12,9 +12,9 @@ namespace MyApp.Services
             return x + y;
         }
 
-        public async UnaryResult<MyObject> ReturnNull()
+        public async UnaryResult<MyObject?> ReturnNull()
         {
-            MyObject result = null;
+            MyObject? result = null;
             return result;
         }
 
